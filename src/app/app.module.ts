@@ -5,10 +5,11 @@ import { AppComponent } from './app.component';
 import {RouterModule} from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import {AppRoutingModule} from './app-routing.module';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatIconModule} from '@angular/material/icon';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -19,10 +20,11 @@ import {MatDividerModule} from '@angular/material/divider';
     BrowserModule,
     RouterModule,
     AppRoutingModule,
-    NgbModule,
     BrowserAnimationsModule,
     MatCardModule,
-    MatDividerModule
+    MatDividerModule,
+    MatIconModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
