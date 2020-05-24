@@ -1,56 +1,16 @@
 <div class="container">
-    <mat-card class="card">
-        <mat-card-header class="header">
-            <div mat-card-avatar class="avatar rotate"></div>
-            <div class="nav">
-                <pre class="flex-item rotate" routerLink="home">About</pre>
-                <pre class="flex-item rotate" routerLink="courses">Projects</pre>
-                <pre class="flex-item rotate" routerLink="courses">Contact</pre>
+    <div class="card">
+        <div class="tile is-vertical">
+            <div class="tile is-child">
+                <app-nav></app-nav>
             </div>
-            <div class="mail">
-                <div class="fa fa-3x fa-envelope-square"
-                     (click)="copyToClipboard('dimakzela@gmail.com')"
-                     matTooltip="{{clipboardToolTip}}"
-                     matTooltipPosition="below"
-                     routerLink="{{url.facebook}}"
-                     rel="noopener noreferrer">
-
-                </div>
+            <div class="my-container tile is-child">
+                <router-outlet></router-outlet>
             </div>
-
-        </mat-card-header>
-        <mat-card-content class="card-content">
-            <router-outlet></router-outlet>
-        </mat-card-content>
-        <mat-card-footer class="footer">
-            <div><h3 class="signature">© {{date}} {{personalData.name}} {{personalData.surname}}</h3></div>
-            <div class="footer-content-container">
-                <div class="fa fa-3x fa-github-square footer-content"
-                     matTooltip="Follow me on Github"
-                     matTooltipPosition="above"
-                     routerLink="{{url.github}}"
-                     rel="noopener noreferrer">
-                </div>
-                <div class="fa fa-3x fa-linkedin-square footer-content"
-                     matTooltip="Connect with me on Linkedin"
-                     matTooltipPosition="above"
-                     routerLink="{{url.linkedIn}}"
-                     rel="noopener noreferrer">
-                </div>
-                <div class="fa fa-3x fa-twitter-square footer-content"
-                     matTooltip="Follow me on Twitter"
-                     matTooltipPosition="above"
-                     routerLink="{{url.twitter}}"
-                     rel="noopener noreferrer">
-                </div>
-                <div class="fa fa-3x fa-facebook-square footer-content"
-                     matTooltip="Follow me on Facebook"
-                     matTooltipPosition="above"
-                     routerLink="{{url.facebook}}"
-                     rel="noopener noreferrer">
-
-                </div>
+            <div class="tile is-child">
+                <app-footer></app-footer>
             </div>
-        </mat-card-footer>
-    </mat-card>
+        </div>
+    </div>
 </div>
+
