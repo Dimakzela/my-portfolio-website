@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class FooterComponent {
   clipboardToolTip = 'Clip to copy my email address to clipboard';
   date = new Date();
-  today = `  ${this.date.getDate()}/${this.date.getMonth()}/${this.date.getFullYear()}`;
+  today = `${this.date.getFullYear()}`;
   personalData = {
     name: 'Dimakatso',
     surname: 'Bopape',

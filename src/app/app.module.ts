@@ -15,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectComponent } from './project/project.component';
 import { BlogComponent } from './blog/blog.component';
+import {ClipboardModule} from '@angular/cdk/clipboard';
 
 @NgModule({
   declarations: [
@@ -26,16 +27,17 @@ import { BlogComponent } from './blog/blog.component';
     ProjectComponent,
     BlogComponent
   ],
-  imports: [
-    BrowserModule,
-    RouterModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatCardModule,
-    MatDividerModule,
-    MatIconModule,
-    MatTooltipModule
-  ],
+    imports: [
+        BrowserModule,
+        RouterModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatCardModule,
+        MatDividerModule,
+        MatIconModule,
+        MatTooltipModule,
+        ClipboardModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

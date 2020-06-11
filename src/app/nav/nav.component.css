@@ -1,20 +1,16 @@
-.avatar {
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-    background-image: url("../../assets/playstore.png");
-    background-size: contain;
-    margin-right: 20px;
+nav {
+    position: fixed;
+    padding: 30px;
+    left: 0;
+    right: 0;
 }
 
-.active-link {
-    text-decoration-line: underline;
+.is-active {
     color: #3273dc;
-    background-color: transparent;
 }
 
-.navbar {
-    background-color: #f1f0f0;
-    padding: 20px;
+@media screen and (max-width: 1024px) {
+    nav {
+        padding: 10px;
+    }
 }
-

@@ -1,8 +1,7 @@
-.signature {
-    color: black;
-    font-size: .9em;
+.footer-icon {
+    padding-left: 15px;
 }
 
-.footer {
-    padding: 30px;
+a {
+    color: black;
 }

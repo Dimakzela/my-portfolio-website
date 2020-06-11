@@ -1,66 +1,31 @@
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<nav class="navbar is-transparent">
     <div class="navbar-brand">
-        <a class="navbar-item avatar" href="https://dimakatsobopape.com"></a>
-
+        <a class="navbar-item" href="https://dimakatsobopape.com">
+            <i class="fa fa-2x fa-code is-hidden-mobile"></i>
+            <div class="title">&nbsp;Dimakatso Bopape</div>
+        </a>
         <div (click)="toggleNavbar()" role="button" #navBurger class="navbar-burger burger"
              aria-label="menu" aria-expanded="false"
-           data-target="navbarBasicExample" id="navbar-burger-id">
+             data-target="navbarBasicExample" id="navbar-burger-id">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
         </div>
     </div>
 
-    <div id="navbarBasicExample" class="navbar-menu" #navMenu>
-        <div class="navbar-start">
-            <a class="navbar-item" [routerLink]="['/home']" routerLinkActive="active-link">
-                Home
-            </a>
-
+    <div id="navbarExampleTransparentExample" class="navbar-menu" #navMenu>
+        <div class="navbar-end">
             <a class="navbar-item" [routerLink]="['/about']" routerLinkActive="active-link">
-                About
+                About me
             </a>
 
             <a class="navbar-item" [routerLink]="['/projects']" routerLinkActive="active-link">
                 Projects
             </a>
 
-            <a class="navbar-item" [routerLink]="['/blogs']" routerLinkActive="active-link">
-                Blogs
+            <a class="navbar-item" [routerLink]="['/articles']" routerLinkActive="active-link">
+                Articles
             </a>
-
-            <div class="navbar-item has-dropdown is-hoverable is-hidden-desktop">
-                <a class="navbar-link">
-                    Follow me
-                </a>
-
-                <div class="navbar-dropdown">
-                    <a class="navbar-item">
-                        Github
-                    </a>
-                    <a class="navbar-item">
-                        LinkedIn
-                    </a>
-                    <a class="navbar-item">
-                        Twitter
-                    </a>
-                    <hr class="navbar-divider">
-                    <a class="navbar-item">
-                        Facebook
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="navbar-end is-hidden-mobile">
-            <div class="navbar-item">
-                <div class="buttons">
-                    <span class="icon" matTooltip="Click to copy my email address">
-                         <i class="fa fa-3x fa-envelope-square"></i>
-                    </span>
-                </div>
-            </div>
         </div>
     </div>
 </nav>
