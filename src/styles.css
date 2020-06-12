@@ -3,11 +3,16 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-.my-container {
-    padding: 20px;
-    height: 650px;
+.column-1, .column-2 {
+    height: 850px;
 }
 
-.underline {
-    text-decoration-line: underline;
+.column-1 {
+    padding-bottom: 40px;
+    background-color: #ffedc1;
+}
+
+.column-2 {
+    padding-bottom: 40px;
+    background-color: #f5f1f1;
 }

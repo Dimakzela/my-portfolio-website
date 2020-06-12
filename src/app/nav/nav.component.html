@@ -1,4 +1,4 @@
-<nav class="navbar is-transparent">
+<nav class="navbar is-transparent is-fixed-top">
     <div class="navbar-brand">
         <a class="navbar-item" href="https://dimakatsobopape.com">
             <i class="fa fa-2x fa-code is-hidden-mobile"></i>
@@ -15,15 +15,19 @@
 
     <div id="navbarExampleTransparentExample" class="navbar-menu" #navMenu>
         <div class="navbar-end">
-            <a class="navbar-item" [routerLink]="['/about']" routerLinkActive="active-link">
+            <a class="navbar-item" (click)="toggleNavbar()" [routerLink]="['/about']" routerLinkActive="active-link">
                 About me
             </a>
 
-            <a class="navbar-item" [routerLink]="['/projects']" routerLinkActive="active-link">
+            <a class="navbar-item" (click)="toggleNavbar()" [routerLink]="['/resume']" routerLinkActive="active-link">
+                Resume
+            </a>
+
+            <a class="navbar-item" (click)="toggleNavbar()" [routerLink]="['/projects']" routerLinkActive="active-link">
                 Projects
             </a>
 
-            <a class="navbar-item" [routerLink]="['/articles']" routerLinkActive="active-link">
+            <a class="navbar-item" (click)="toggleNavbar()" [routerLink]="['/articles']" routerLinkActive="active-link">
                 Articles
             </a>
         </div>

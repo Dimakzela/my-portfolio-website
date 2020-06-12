@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {RouterModule} from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { ResumeComponent } from './home/resume.component';
 import {AppRoutingModule} from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
@@ -16,11 +16,12 @@ import { AboutComponent } from './about/about.component';
 import { ProjectComponent } from './project/project.component';
 import { BlogComponent } from './blog/blog.component';
 import {ClipboardModule} from '@angular/cdk/clipboard';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+    ResumeComponent,
     NavComponent,
     FooterComponent,
     AboutComponent,
@@ -36,7 +37,8 @@ import {ClipboardModule} from '@angular/cdk/clipboard';
         MatDividerModule,
         MatIconModule,
         MatTooltipModule,
-        ClipboardModule
+        ClipboardModule,
+        MatExpansionModule
     ],
   providers: [],
   bootstrap: [AppComponent]

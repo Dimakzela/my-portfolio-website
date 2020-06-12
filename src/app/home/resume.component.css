@@ -1,0 +1,22 @@
+.resume {
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resume-card {
+    margin-top: 20px;
+    height: 400px;
+    width: 800px;
+}
+
+@media screen and (max-width: 768px) {
+    .resume-card {
+        width: 350px;
+    }
+
+    .resume {
+        padding-top: 100px;
+    }
+}

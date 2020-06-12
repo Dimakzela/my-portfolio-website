@@ -1,23 +1,10 @@
-<!--<div class="my-container columns is-centered is-vcentered">
-    <div class="column has-text-centered is-half">
-        <p class="is-size-5-desktop is-size-6-mobile">
-            <strong class="underline is-size-4">I'm a Full Stack Java</strong>
-            I'm Interested in developing large scalable enterprise web/mobile application.
-            Using Java, Kotlin, Springboot, Angular, Ionic, Reactjs, and React native.
-            <span class="underline">I completed honors degree in computer sciences.</span>
-            I want to work on the hard stuff.
-            I am able to collaborate with teams and start delivering quickly.
-        </p>
-    </div>
-</div>-->
-
-<div class="columns about">
+<div class="columns is-mobile">
     <div class="column column-1 is-4-desktop is-6-mobile"></div>
     <div class="card-1">
         <div class="card-content-1">
             <div class="avatar"></div>
-            <div class="title">Dimakatso Bopape</div>
-            <div class="position">Full Stack Java Developer</div>
+            <div class="title is-mobile">Dimakatso Bopape</div>
+            <div class="position is-mobile">Full Stack Java Developer</div>
             <a><i class="fa fa-phone"></i> 073 091 4101</a>
             <a [cdkCopyToClipboard]="email"
                matTooltip="Click to copy email"
@@ -25,17 +12,37 @@
                 <i class="fa fa-envelope"></i> Dimakzela@gmail.com</a>
         </div>
         <div class="columns is-vertical is-centered is-mobile">
-            <a class="column is-offset-1 footer-icon fa fa-2x fa-linkedin"> </a>
-            <a class="column footer-icon fa fa-2x fa-github"> </a>
-            <a class="column footer-icon fa fa-2x fa-facebook"> </a>
-            <a class="column footer-icon fa fa-2x fa-twitter"> </a>
+            <a class="column is-offset-1 fa fa-2x fa-linkedin"> </a>
+            <a class="column fa fa-2x fa-github"> </a>
+            <a class="column fa fa-2x fa-facebook"> </a>
+            <a class="column fa fa-2x fa-twitter"> </a>
+        </div>
+        <div class="columns is-vertical is-mobile is-centered is-hidden-desktop is-hidden-fullhd is-hidden-widescreen">
+            <div class="column is-offset-1 is-centered">
+                <button class="button is-rounded is-primary">Projects</button>
+            </div>
+            <div class="column is-centered">
+                <button class="button is-rounded is-warning">Resume</button>
+            </div>
         </div>
     </div>
-    <div class="column column-2 is-hidden-mobile">
-        <article class="is-size-4">
-            I'm Interested in developing large scalable enterprise web/mobile application.
-            I have experience with <code>Java, Kotlin, Spring-boot, Angular, Ionic, Reactjs, and React-native</code>.
-            I want to work on the hard stuff. I am able to join a team and start delivering quickly.
-        </article>
+    <div class="column column-2">
+        <div class="columns is-vertical is-vcentered is-hidden-mobile">
+            <div class="column article-1 is-offset-2 has-text-centered is-size-5">
+                <div class="column title">Hello, Nice to meet you!</div>
+                <div class="column"></div>
+                I'm Interested in developing large scalable enterprise web/mobile application.
+                I have experience with:
+                <br>
+                <code><i>Java, Kotlin, Spring-boot, Angular, Ionic, Reactjs, and React-native</i></code>
+                <br>
+                I want to work on the hard stuff. I am able to join a team and start delivering quickly.
+                <div class="column"></div>
+                <div class="column is-centered">
+                    <button class="button is-rounded is-primary">Projects</button>&nbsp;
+                    <button class="button is-rounded is-warning">Resume</button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
